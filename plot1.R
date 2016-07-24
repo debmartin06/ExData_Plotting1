@@ -7,7 +7,7 @@ hpc$Date <- as.Date(hpc$Date, format = '%d/%m/%Y')
 #To subset only the Feb 1 and 2 data
 hpcsub <- hpc[hpc$Date == '2007-02-01' | hpc$Date == '2007-02-02', ]
 
-#To plot the histogram for Plot 1
+#To plot the histogram for Plot 1 on the Screen Device
 hist(hpcsub$Global_active_power, freq = TRUE, main = 'Global Active Power', xlab = 'Global Active Power (kilowatts)', col = 'red')
 dev.off()
 
